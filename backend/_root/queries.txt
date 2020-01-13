@@ -1,0 +1,22 @@
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('UNK','Unknown');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('VG1','Verb Group 1');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('VG2','Verb Group 2');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('VG3','Verb Group 3');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('VP','Verbes Pronominaux');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('NM','Noun Masculine');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('NF','Noun Feminine');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('ADV','Adverbs');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('ADJ','Adjectives');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('PRN','Pronouns');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('ART','Articles');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('PPS','Prepositions');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('NP','Proper nouns');
+INSERT INTO vocab_vtype (vtype_abrev,vtype_desc) VALUES ('N','Noun');
+
+INSERT INTO vocab_category (category_abrev,category_desc) VALUES ('Unknown','Unknown');
+INSERT INTO vocab_category (category_abrev,category_desc) VALUES ('Common verbs','Verbs that appear frequently');
+INSERT INTO vocab_category (category_abrev,category_desc) VALUES ('Jobs related','Nouns/Verbs that describe jobs/occupations');
+
+INSERT INTO vocab_vocab (french, pronunciation,english,vtype_id,category_id,example,note) VALUES ('aimer','/ai me/','like',1,2,'Jaime lire.','easy');
+INSERT INTO vocab_vocab (french, pronunciation,english,vtype_id,category_id,example,note) VALUES ('je','/ze/','I',10,1,'Je suis anglaise.','blah blah');
+commit;
